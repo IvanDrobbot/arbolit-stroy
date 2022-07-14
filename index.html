@@ -25,7 +25,7 @@
 		<div>
 			<header class="header" class="w-full absolute top-0 medium:static">
 				<div class="flex items-center w-full h-[80px] justify-between px-[40px] medium:flex-col medium:h-auto">
-					<a href="/" class="min-w-[280px] medium:block medium:text-center medium:p-[20px]">
+					<a href="/" class="min-w-[280px] medium:block medium:text-center medium:p-[20px] medium:flex medium:justify-center">
 						<img src="https://static.tildacdn.com/tild3531-3861-4466-b566-333962656138/logo.svg" class="w-[250px] h-auto block medium:m-[20px]" alt="" />
 					</a>
 					<ul class="flex justify-center items-center flex-wrap medium:block medium:flex-col medium:text-center medium:my-[20px]">
@@ -618,34 +618,34 @@
 		<section class="gallery" x-data="{openGallery: false}">
 			<div class="container-fluid">
 				<div class="flex flex-wrap">
-					<div class="col col-4 py-[12px] px-[6px]" @click="openGallery = true">
+					<div class="col col-4 py-[12px] px-[6px]" @click="openGallery = true; popupOpen = true">
 						<img x-lazy="{url: 'https://thumb.tildacdn.com/tild6162-3337-4736-b232-626438326237/-/format/webp/arbolitovye_bloki_1.jpg'}" class="cursor-zoom-in" alt="" />
 					</div>
-					<div class="col col-4 py-[12px] px-[6px]" @click="openGallery = true">
+					<div class="col col-4 py-[12px] px-[6px]" @click="openGallery = true; popupOpen = true">
 						<img x-lazy="{url: 'https://thumb.tildacdn.com/tild6162-3337-4736-b232-626438326237/-/format/webp/arbolitovye_bloki_1.jpg'}" class="cursor-zoom-in" alt="" />
 					</div>
-					<div class="col col-4 py-[12px] px-[6px]" @click="openGallery = true">
+					<div class="col col-4 py-[12px] px-[6px]" @click="openGallery = true; popupOpen = true">
 						<img x-lazy="{url: 'https://thumb.tildacdn.com/tild6162-3337-4736-b232-626438326237/-/format/webp/arbolitovye_bloki_1.jpg'}" class="cursor-zoom-in" alt="" />
 					</div>
-					<div class="col col-4 py-[12px] px-[6px]" @click="openGallery = true">
+					<div class="col col-4 py-[12px] px-[6px]" @click="openGallery = true; popupOpen = true">
 						<img x-lazy="{url: 'https://thumb.tildacdn.com/tild6162-3337-4736-b232-626438326237/-/format/webp/arbolitovye_bloki_1.jpg'}" class="cursor-zoom-in" alt="" />
 					</div>
-					<div class="col col-4 py-[12px] px-[6px]" @click="openGallery = true">
+					<div class="col col-4 py-[12px] px-[6px]" @click="openGallery = true; popupOpen = true">
 						<img x-lazy="{url: 'https://thumb.tildacdn.com/tild6162-3337-4736-b232-626438326237/-/format/webp/arbolitovye_bloki_1.jpg'}" class="cursor-zoom-in" alt="" />
 					</div>
-					<div class="col col-4 py-[12px] px-[6px]" @click="openGallery = true">
+					<div class="col col-4 py-[12px] px-[6px]" @click="openGallery = true; popupOpen = true">
 						<img x-lazy="{url: 'https://thumb.tildacdn.com/tild6162-3337-4736-b232-626438326237/-/format/webp/arbolitovye_bloki_1.jpg'}" class="cursor-zoom-in" alt="" />
 					</div>
-					<div class="col col-4 py-[12px] px-[6px]" @click="openGallery = true">
+					<div class="col col-4 py-[12px] px-[6px]" @click="openGallery = true; popupOpen = true">
 						<img x-lazy="{url: 'https://thumb.tildacdn.com/tild6162-3337-4736-b232-626438326237/-/format/webp/arbolitovye_bloki_1.jpg'}" class="cursor-zoom-in" alt="" />
 					</div>
-					<div class="col col-4 py-[12px] px-[6px]" @click="openGallery = true">
+					<div class="col col-4 py-[12px] px-[6px]" @click="openGallery = true; popupOpen = true">
 						<img x-lazy="{url: 'https://thumb.tildacdn.com/tild6162-3337-4736-b232-626438326237/-/format/webp/arbolitovye_bloki_1.jpg'}" class="cursor-zoom-in" alt="" />
 					</div>
 				</div>
-				<div class="fixed top-0 left-0 right-0 bottom-0 z-[100]" @keyup.escape.window="if(openGallery) {openGallery = false}" x-show="openGallery" x-cloak>
+				<div class="fixed top-0 left-0 right-0 bottom-0 z-[100]" @keyup.escape.window="if(openGallery) {openGallery = false; popupOpen = false}" x-show="openGallery" x-cloak>
 					<div class="fixed top-0 left-0 right-0 bottom-0 bg-white"></div>
-					<a href="" class="absolute right-[20px] top-[20px] pointer w-[23px] h-[23px] cursor-pointer z-[1000] hover:opacity-60 transition ease-in-out duration-300 overflow-hidden" @click.prevent="openGallery = false">
+					<a href="" class="absolute right-[20px] top-[20px] pointer w-[23px] h-[23px] cursor-pointer z-[1000] hover:opacity-60 transition ease-in-out duration-300 overflow-hidden" @click.prevent="openGallery = false; popupOpen = false">
 						<svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 							<g stroke="none" stroke-width="1" fill="#000" fill-rule="evenodd">
 								<rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
@@ -761,6 +761,52 @@
 			</table>
 		</div>
 
+		<section class="text" style="margin-top: 90px; margin-bottom: 60px">
+			<div class="container">
+				<div class="flex">
+					<div class="max-w-[760px] medium:max-w-[600px]">
+						<h2>Партнеры компании</h2>
+						<p>Ключевые партнеры компании «Арболит Юг Строй»</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="partners">
+			<div class="container-fluid">
+				<div class="flex flex-wrap justify-center">
+					<a href="#" class="col col-4-1 mb-[20px]">
+						<img x-lazy="{url: 'https://thumb.tildacdn.com/tild6636-6232-4561-b734-643566623334/-/resize/240x/-/format/webp/kblok.jpg'}" alt="" />
+					</a>
+					<a href="#" class="col col-4-1 mb-[20px]">
+						<img x-lazy="{url: 'https://thumb.tildacdn.com/tild3566-6635-4230-b536-333261326236/-/resize/240x/-/format/webp/ruarbolit.jpg'}" alt="" />
+					</a>
+					<a href="#" class="col col-4-1 mb-[20px]">
+						<img x-lazy="{url: 'https://thumb.tildacdn.com/tild6637-3065-4263-b935-363634643238/-/resize/240x/-/format/webp/arbolit23.jpg'}" alt="" />
+					</a>
+					<a href="#" class="col col-4-1 mb-[20px]">
+						<img x-lazy="{url: 'https://thumb.tildacdn.com/tild6532-3939-4163-b035-353661323136/-/resize/240x/-/format/webp/RuPlans.jpg'}" alt="" />
+					</a>
+					<a href="#" class="col col-4-1 mb-[20px]">
+						<img x-lazy="{url: 'https://thumb.tildacdn.com/tild3162-3638-4262-b561-616465333731/-/resize/240x/-/format/webp/docke.jpg'}" alt="" />
+					</a>
+					<a href="#" class="col col-4-1 mb-[20px]">
+						<img x-lazy="{url: 'https://thumb.tildacdn.com/tild6135-3438-4739-b862-626561653034/-/resize/240x/-/format/webp/alta-profil.jpg'}" alt="" />
+					</a>
+					<a href="#" class="col col-4-1 mb-[20px]">
+						<img x-lazy="{url: 'https://thumb.tildacdn.com/tild6134-3837-4331-b030-613534636530/-/resize/240x/-/format/webp/grandline.jpg'}" alt="" />
+					</a>
+					<a href="#" class="col col-4-1 mb-[20px]">
+						<img x-lazy="{url: 'https://thumb.tildacdn.com/tild3335-3734-4631-a466-393237366539/-/resize/240x/-/format/webp/slavyanskij_kirpich.jpg'}" alt="" />
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<div class="container w-full h-[2px]" style="margin-top: 90px">
+			<span class="block bg-primary w-full h-full"></span>
+		</div>
+
 		<section
 			style="margin-top: 90px"
 			x-lazy="{type: 'background', url: 'https://thumb.tildacdn.com/tild3737-6631-4739-a437-643764616439/-/format/webp/arbolit_forma.jpg'}"
@@ -802,7 +848,9 @@
 							<img src="https://thumb.tildacdn.com/tild3835-3465-4235-b863-646165376165/-/resize/250x/-/format/webp/logo-yug.png" class="max-w-[250px]" alt="" />
 						</a>
 						<div class="mt-[40px] text-small text-sableness">
-							© Арболит Юг Строй, 2021 Политика конфиденциальности
+							© Арболит Юг Строй, 2021
+							<br />
+							<a href="#">Политика конфиденциальности</a>
 							<br />
 							<br />
 							Разработчик сайта – интернет-агентство KBLOK
