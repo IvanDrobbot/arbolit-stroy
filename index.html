@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,17 +13,17 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-		<script defer type="text/javascript" src="assets/js/plugins/lazy.min.js"></script>
-		<script defer type="text/javascript" src="assets/js/plugins/mask.min.js"></script>
+		<script defer src="assets/js/plugins/lazy.min.js"></script>
+		<script defer src="assets/js/plugins/mask.min.js"></script>
 
-		<script defer type="text/javascript" src="assets/js/swiper.min.js"></script>
-		<script defer type="text/javascript" src="assets/js/alpine.min.js"></script>
+		<script defer src="assets/js/swiper.min.js"></script>
+		<script defer src="assets/js/alpine.min.js"></script>
 
 		<link rel="stylesheet" href="assets/css/swiper.min.css" />
 	</head>
 	<body class="font-montserrat scroll-smooth" :class="popupOpen ? 'overflow-hidden' : ''" x-data="{popupOpen: false, openModal: false, openModal2: false}">
 		<div>
-			<header class="header" class="w-full absolute top-0 medium:static">
+			<header class="header w-full absolute top-0 medium:static">
 				<div class="flex items-center w-full h-[80px] justify-between px-[40px] medium:flex-col medium:h-auto">
 					<a href="/" class="min-w-[280px] medium:block medium:text-center medium:p-[20px] medium:flex medium:justify-center">
 						<img src="https://static.tildacdn.com/tild3531-3861-4466-b566-333962656138/logo.svg" class="w-[250px] h-auto block medium:m-[20px]" alt="" />
@@ -108,7 +108,7 @@
 		</div>
 
 		<div>
-			<section class="hero" class="w-full h-[800px] bg-no-repeat bg-center bg-cover bg-scroll" style="background-image: url(https://thumb.tildacdn.com/tild6363-3132-4366-b330-613033313738/-/format/webp/stroitelstvo_domov_i.jpg)">
+			<section class="hero w-full h-[800px] bg-no-repeat bg-center bg-cover bg-scroll" style="background-image: url(https://thumb.tildacdn.com/tild6363-3132-4366-b330-613033313738/-/format/webp/stroitelstvo_domov_i.jpg)">
 				<div class="container pt-[90px]">
 					<div class="w-full h-full">
 						<div class="max-w-[760px] h-full py-[42px]">
@@ -303,24 +303,21 @@
 												>
 													<div class="swiper-wrapper">
 														<img
-															class="swiper-slide"
 															@click="openThisModal = true"
 															x-lazy="{url: 'https://thumb.tildacdn.com/tild3436-3365-4164-b231-623766303661/-/cover/560x365/center/center/-/format/webp/arbolit_proekt1_7.jpg'}"
-															class="w-full h-auto"
+															class="swiper-slide w-full h-auto"
 															alt=""
 														/>
 														<img
-															class="swiper-slide"
 															@click="openThisModal = true"
 															x-lazy="{url: 'https://thumb.tildacdn.com/tild3436-3365-4164-b231-623766303661/-/cover/560x365/center/center/-/format/webp/arbolit_proekt1_7.jpg'}"
-															class="w-full h-auto"
+															class="swiper-slide w-full h-auto"
 															alt=""
 														/>
 														<img
-															class="swiper-slide"
 															@click="openThisModal = true"
 															x-lazy="{url: 'https://thumb.tildacdn.com/tild3436-3365-4164-b231-623766303661/-/cover/560x365/center/center/-/format/webp/arbolit_proekt1_7.jpg'}"
-															class="w-full h-auto"
+															class="swiper-slide w-full h-auto"
 															alt=""
 														/>
 													</div>
